@@ -49,7 +49,40 @@ $('#get-in-touch-form').validate({
   },
   submitHandler: function submitHandler(form) {
     // do other stuff for a valid form
-    var alertMessage = '<div class=\'get-in-touch-wrapper__ajax-send\'>' + +'<div class=\'get-in-touch-wrapper__ajax-send__body\'>' + '<div class=\'get-in-touch-wrapper__ajax-send__image\'>' + '<img src=\'images/success.svg\' alt=\'\'>' + '</div>' + '<div class=\'get-in-touch-wrapper__ajax-send__title\'>' + '<h4 class=\'get-in-touch-wrapper__ajax-send__title-text\'>Thanks for your message!</h4>' + '</div>' + '<div>' + '<p class=\'get-in-touch-wrapper__ajax-send__comment\'>We do our best to respond within two business days.</p>' + '</div>' + '<div class=\'get-in-touch-wrapper__ajax-send__buttons\'>' + '<a class=\'button button--red get-in-touch-wrapper__ajax-send__button\'>Send another message</a>' + '</div>' + '</div>' + '</div>';
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var number = +$("#number").val();
+    var message = $("#message").val();
+    console.log(name + "  " + email + "  " +  number + "  " + message);
+
+    var dataString = "<div>" +
+        "<p><b>Name: </b>"+ name +"</p>" +
+        "<p><b>Email: </b>"+ email +"</p>" +
+        "<p><b>Number: </b>"+ number +"</p>" +
+        "<p><b>Message: </b>"+ message +"</p>" +
+        "</div>"
+    $.ajax({
+      type: "POST",
+      url: "script/send.php",
+      data: { data: dataString, senderAddress: email },
+      success: function() {
+
+
+
+        // show a success message to your visitors
+
+
+
+        // clear input field values
+        $("#name").val('');
+        $("#email").val('');
+        $("#message").val('');
+
+
+      }
+    });
+
+
     $('.get-in-touch-wrapper').fadeOut();
     $('.get-in-touch-wrapper__ajax-send').css('display', 'flex').fadeIn();
     $('#get-in-touch-form')[0].reset();

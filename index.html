@@ -609,13 +609,13 @@
                 <form id="get-in-touch-form" action="#" class="get-in-touch-wrapper__body__form">
                   <div class="get-in-touch-wrapper__body__form__wrapper">
                     <div class="grey-colored get-in-touch-wrapper__body__form__input-wrapper">
-                      <input type="text" class="get-in-touch-wrapper__body__form__input" name="name" placeholder="Your name">
+                      <input id="name" type="text" class="get-in-touch-wrapper__body__form__input" name="name" placeholder="Your name">
                     </div>
                     <div class="grey-colored get-in-touch-wrapper__body__form__input-wrapper">
-                      <input type="text" class="get-in-touch-wrapper__body__form__input" name="email" placeholder="Email address">
+                      <input id="email" type="text" class="get-in-touch-wrapper__body__form__input" name="email" placeholder="Email address">
                     </div>
                     <div class="grey-colored get-in-touch-wrapper__body__form__input-wrapper">
-                      <input type="number" class="get-in-touch-wrapper__body__form__input" name="number" placeholder="Contact number">
+                      <input id="number" type="number" class="get-in-touch-wrapper__body__form__input" name="number" placeholder="Contact number">
                     </div>
                     <div class="grey-colored get-in-touch-wrapper__body__form__checkboxes">
                       <label class="get-in-touch-wrapper__body__form__checkboxes__label">
@@ -626,9 +626,9 @@
                         Select all that apply
                       </span>
                       </label>
-                      <div class="get-in-touch-wrapper__body__form__checkboxes__controls">
+                      <div class="get-in-touch-wrapper__body__form__checkboxes__controls" id="project_involves">
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="involves" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="involves" type="checkbox" value="Websites & web software" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -639,7 +639,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="involves" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="involves" type="checkbox" value="Mobile or tablet apps" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -650,7 +650,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="involves" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="involves" type="checkbox" value="Services & integration" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -661,7 +661,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="involves" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="involves" type="checkbox" value="Hardware integration" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -673,7 +673,7 @@
                         </label>
                       </div>
                     </div>
-                    <div class="grey-colored get-in-touch-wrapper__body__form__checkboxes">
+                    <div class="grey-colored get-in-touch-wrapper__body__form__checkboxes" id="whatPlans">
                       <label class="get-in-touch-wrapper__body__form__checkboxes__label">
                       <span class="get-in-touch-wrapper__body__form__checkboxes__label--title">
                         What are you planning?
@@ -684,7 +684,7 @@
                       </label>
                       <div class="get-in-touch-wrapper__body__form__checkboxes__controls">
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="plans" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="plans" type="checkbox" value="We need to build a product" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -695,7 +695,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="plans" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="plans" type="checkbox" value="We need to rethink a product" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -706,7 +706,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="plans" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="plans" type="checkbox" value="We need to launch a website/app" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -717,7 +717,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="plans" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="plans" type="checkbox" value="We need to redesign a website/app" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -728,7 +728,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="plans" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="plans" type="checkbox" value="We need additional capacity" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -739,7 +739,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__checkboxes__controls__control">
-                          <input name="plans" type="checkbox" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
+                          <input name="plans" type="checkbox" value="We need advice & direction" class="get-in-touch-wrapper__body__form__checkboxes__controls__input">
                         <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon">
                             <img class="get-in-touch-wrapper__body__form__checkboxes__controls__control__icon-image" src="images/check.svg" alt="square">
@@ -759,7 +759,7 @@
                       </label>
                       <div class="get-in-touch-wrapper__body__form__radio__controls">
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="deadline" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="deadline" type="radio" value="ASAP ( Urgent )" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -770,7 +770,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="deadline" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="deadline" type="radio" value="3 - 6 months" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -781,7 +781,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="deadline" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="deadline" type="radio"value="6 - 12 months" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -792,7 +792,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="deadline" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="deadline" type="radio" value="No deadline" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -812,7 +812,7 @@
                       </label>
                       <div class="get-in-touch-wrapper__body__form__radio__controls">
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="budget" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="budget" value="Not sure" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -823,7 +823,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="budget" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="budget" value="$30k - $60k" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -834,7 +834,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="budget" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="budget" value="$60k - $120k" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -845,7 +845,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="budget" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="budget" value="$120k - $250k" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -856,7 +856,7 @@
                         </span>
                         </label>
                         <label class="get-in-touch-wrapper__body__form__radio__controls__control">
-                          <input name="budget" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
+                          <input name="budget" value="$250k+" type="radio" class="get-in-touch-wrapper__body__form__radio__controls__input">
                         <span class="get-in-touch-wrapper__body__form__radio__controls__control__label">
                           <span class="get-in-touch-wrapper__body__form__radio__controls__control__icon">
                             <i class="get-in-touch-wrapper__body__form__radio__controls__control__icon__image"></i>
@@ -869,7 +869,7 @@
                       </div>
                     </div>
                     <div class="grey-colored get-in-touch-wrapper__body__form__textarea">
-                      <textarea rows="6" class="get-in-touch-wrapper__body__form__textarea-field" placeholder="Project details"></textarea>
+                      <textarea id="message" rows="6" class="get-in-touch-wrapper__body__form__textarea-field" placeholder="Project details"></textarea>
                     </div>
                   </div>
                   <button type="submit" class="get-in-touch-wrapper__body__form__button button button--red">send message</button>
@@ -901,16 +901,6 @@
       </footer>
     </div>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
-
     <script src="scripts/vendor.js"></script>
 
     <script src="scripts/plugins.js"></script>
@@ -918,3 +908,5 @@
     <script src="scripts/main.js"></script>
   </body>
 </html>
+
+
